@@ -1,30 +1,35 @@
 {
     "entradas": [
         {
+            "id":"Wantan-rellenos-de-carne-de-soya",
             "nombre": "Wantan rellenos de carne de soya",
             "cantidad": 5,
             "precio": 19.90,
             "imagen":""
         },
         {
+            "id":"Gyosas-de-Vegetales-con-proteína-de-Soya",
             "nombre":"Gyosas de Vegetales con proteína de Soya",
             "camtidad": 6,
             "precio":24.90,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083657/chifa/products/Dumpling-1536x1024_ipxkfb.jpg"
         },
         {
+            "id":"Sopa-wantan-rellenas-de-tempeh-de-garbanzos",
             "nombre":"Sopa wantan rellenas de tempeh de garbanzos",
             "camtidad":"",
             "precio":26.90,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083679/chifa/products/sopa-wonton-con-tempeh-de-garbanzos_b2bba30d_800x800_zpsktw.jpg"
         },
         {
+            "id":"Sopa-wantan-rellenas-de-EDAMAME-Y-MENTA",
             "nombre":"Sopa wantan rellenas de EDAMAME Y MENTA",
             "camtidad":"",
             "precio":28.90,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083665/chifa/products/edamame-vegan-wonton-soup-image-2_ucyggb.jpg"
         },
         {
+            "id":"ROLLITOS-CON-MANGO-Y-PALTA",
             "nombre":"ROLLITOS CON MANGO Y PALTA",
             "cantidad":5,
             "precio":32.90,
@@ -32,6 +37,7 @@
             
         },
         {
+            "id":"KEBABS-DE-BERENJENAS-CON-GLASEADO-DE-TAMARINDO",
             "nombre":"KEBABS DE BERENJENAS CON GLASEADO DE TAMARINDO",
             "cantidad":6,
             "precio":34.90,
@@ -41,6 +47,7 @@
     ],
     "platos": [
         {
+            "id":"Chaufa-vegano",
             "nombre":"Chaufa vegano",
             "cantidad":"",
             "precio":"",
@@ -48,6 +55,7 @@
             
         },
         {
+            "id":"Tofu-agridulce-con-verduras",
             "nombre":"Tofu agridulce con verduras",
             "cantidad":"",
             "precio":"",
@@ -55,6 +63,7 @@
             
         },
         {
+            "id":"Salteado-de-Tofu-con-Brotes-de-Soja",
             "nombre":"Salteado de Tofu con Brotes de Soja",
             "cantidad":"",
             "precio":"",
@@ -63,6 +72,7 @@
         },
 
         {
+            "id":"Aeropuerto-de-quinua-multicolor",
             "nombre":"Aeropuerto de quinua multicolor",
             "cantidad":"",
             "precio":"",
@@ -70,6 +80,7 @@
             
         },
         {
+            "id":"Salteado-de-acelgas-y-tofu",
             "nombre":"Salteado de acelgas y tofu",
             "cantidad":"",
             "precio":"",
@@ -77,13 +88,15 @@
             
         },
         {
-            "nombre":"Chaufa de Tofu picante con guisantes ",
+            "id":"Chaufa-de-Tofu-picante-con-guisantes",
+            "nombre":"Chaufa de Tofu picante con guisantes",
             "cantidad":"",
             "precio":"",
             "imagen":""
             
         },
         {
+            "id":"Chaufa-de-Brócoli-y-Tofu-en-Salsa-de-Ajo",
             "nombre":"Chaufa de Brócoli y Tofu en Salsa de Ajo",
             "cantidad":"",
             "precio":"",
@@ -91,6 +104,7 @@
             
         },
         {
+            "id":"TOFU-EN-TROZOS-CON-TAUSÍ-Y-VERDURAS",
             "nombre":"TOFU EN TROZOS CON TAUSÍ Y VERDURAS",
             "cantidad":"",
             "precio":"",
@@ -98,6 +112,7 @@
             
         },
         {
+            "id":"TIPAKAY-DE-TOFU",
             "nombre":"TIPAKAY DE TOFU",
             "cantidad":"",
             "precio":"",
@@ -110,6 +125,7 @@
             "titulo":"Las infaltables",
             "contenido":[
                 {
+                    "id":"MIX-VEGAN",
                     "nombre":"MIX VEGAN",
                     "cantidad":"",
                     "precio":15.00,
@@ -117,6 +133,7 @@
                     
                 },
                 {
+                    "id":"FRUTOS-ROJOS",
                     "nombre":"FRUTOS ROJOS",
                     "cantidad":"",
                     "precio":15.00,
@@ -124,6 +141,7 @@
                     
                 },
                 {
+                    "id":"TROPICAL",
                     "nombre":"TROPICAL",
                     "cantidad":"",
                     "precio":15.00,
@@ -136,27 +154,31 @@
             "titulo":"REFRESCANTES",
             "contenido":[
                 {
-                    "nombre":"NARANJADA ",
+                    "id":"NARANJADA",
+                    "nombre":"NARANJADA",
                     "cantidad":"",
                     "precio":9.00,
                     "imagen":""
                     
                 },
                 {
-                    "nombre":"LIMONADA ",
+                    "id":"LIMONADA",
+                    "nombre":"LIMONADA",
                     "cantidad":"",
                     "precio":9.00,
                     "imagen":""
                     
                 },
                 {
-                    "nombre":"MARACUYÁ ",
+                    "id":"MARACUYA",
+                    "nombre":"MARACUYÁ",
                     "cantidad":"",
                     "precio":9.00,
                     "imagen":""
                     
                 },
                 {
+                    "id":"LIMONADA-HIERBA-LUISA",
                     "nombre":"LIMONADA HIERBA LUISA",
                     "cantidad":"",
                     "precio":11.00,

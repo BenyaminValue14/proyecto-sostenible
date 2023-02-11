@@ -2457,8 +2457,16 @@ textarea:focus {
 .footer-content li:last-child {
     padding-bottom: 0px;
 }
+.footer-content ul {
+    padding-left: 0;
+}
+.footer-contact ul {
+    padding-left: 0px;
+}
 .footer-content li a {
     display: block;
+    color: #242424;
+    text-decoration: none;
 }
 .footer-content li a:hover {
     color: #519f10;
@@ -5518,9 +5526,22 @@ section.wn_contact_area {
 }
 }
 
+/*ADD*/
+.carta-content > input {
+    display: none;
+}
+.carta-content > label {
+    position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+transition: 300ms;
+}
 
+.carta-content input:checked + label {
+    border: 2px solid green;
 
-
+}
 
 
 
