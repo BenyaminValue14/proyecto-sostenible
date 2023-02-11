@@ -8,6 +8,7 @@ a.meanmenu-reveal{display:none}
   z-index: 1;
 }
 .mean-container a.meanmenu-reveal {
+  margin-top: 4px;
   color: #333;
   cursor: pointer;
   display: block;

@@ -272,7 +272,7 @@
 	  max-width: 80%;
 	}
     .mean-container a.meanmenu-reveal {
-        border: 1px solid #333;
+        border: 1px solid transparent;
         padding: 5px 6px 2px;
     }
 	.section-title {
@@ -620,8 +620,8 @@
         bottom: -7px;
         line-height: 21px;
     }
-    .mean-container a.meanmenu-reveal {
-        border: 1px solid #333;
+    .mean-container a.meannu-reveal {
+        border: 1px solid transparent;
         padding: 5px 6px 2px;
     }
     .mobile-menu .mean-nav ul.menu-overflow {

@@ -24,3 +24,45 @@ a {
     background: black;
   }
 }
+
+.text-slider {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+.text-slider p,
+.text-slider h1,
+.text-slider span {
+  color: #fff;
+}
+.slider-image {
+  position: relative;
+  width: 260px;
+  height: 284px;
+}
+.product-area-content {
+  width: 90%;
+  max-width: 1250px;
+  margin-inline: auto;
+}
+.slider-image > span{
+  background-color: #519f10;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  left: 10px;
+  line-height: 1;
+  position: absolute;
+  top: 10px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+/*MODAL*/
+.modal-content {
+  max-height: 85vh;
+  overflow-y: auto;
+}

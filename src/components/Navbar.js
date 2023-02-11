@@ -3,7 +3,7 @@ import Image from 'next/image'
 import MediaQuery, { useMediaQuery } from 'react-responsive'
 import {MdMenuBook} from 'react-icons/md'
 
-const Navbar = () => {
+const Navbar = ({handleShow}) => {
     const [meanclose, setMeanclose] = useState(false);
     const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
@@ -122,7 +122,7 @@ const Navbar = () => {
                             </nav>
                         </div>
                         <div className="header-currency">
-                            <button>
+                            <button onClick={handleShow}>
                                  <MdMenuBook/> <span>Ver carta</span>
                             </button>
 

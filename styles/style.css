@@ -2241,6 +2241,13 @@ textarea:focus {
   margin: 0 0 8px;
   transition:.4s;
 }
+.product-content .cart-hovera h4 {
+    color: #6d6d6d;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    transition:.4s;
+}
 .product-content .cart-hover > h4 a {
   color: #6d6d6d;
 }
