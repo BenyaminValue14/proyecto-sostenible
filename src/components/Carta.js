@@ -4,8 +4,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import menu from '../db/menu.json';
 import {useForm} from 'react-hook-form';
+import { useRouter } from 'next/router'
 
-function Carta({showModal, setShowModal}) {
+function Carta({showModal, setShowModal, setPedido}) {
   //const [show, setShow] = useState(false);
   const {handleSubmit, register} = useForm({
     defaultValues: {
@@ -17,6 +18,7 @@ function Carta({showModal, setShowModal}) {
   const [entradas, setEntradas] = useState([]);
   const [platos, setPlatos] = useState([]);
   const [bebidas, setBebidas] = useState([]);
+  const router = useRouter()
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
@@ -36,8 +38,10 @@ function Carta({showModal, setShowModal}) {
     console.log(e.target.value);
   }
   const submitCarta = (data) => {
-    console.log(data);
-    console.log(JSON.stringify(data))
+    setPedido(data);
+    console.log(JSON.stringify(data));
+    router.push("form");
+
   };
 
   return (
@@ -174,14 +178,14 @@ function Carta({showModal, setShowModal}) {
             <input type="submit" value="Pedir ahora" />
           </form>
         </Modal.Body>
-        <Modal.Footer>
+        {/*<Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button>
-        </Modal.Footer>
+        </Modal.Footer>*/}
       </Modal>
     </>
   );

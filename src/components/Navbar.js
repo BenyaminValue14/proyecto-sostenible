@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import MediaQuery, { useMediaQuery } from 'react-responsive'
 import {MdMenuBook} from 'react-icons/md'
 
@@ -28,95 +29,10 @@ const Navbar = ({handleShow}) => {
                         <div className="main-menu">
                             <nav>
                                 <ul>
-                                    <li className="top-hover"><a href="index.html">Inicio</a></li>
+                                    <li className="top-hover"><Link href="/" >Inicio</Link></li>
 
                                     <li><a href="about-us.html">Quienes Somos</a></li>
-                                    <li className="mega-menu-position top-hover"><a href="shop.html">Tienda</a>
-                                        <ul className="mega-menu">
-                                            <li>
-                                                <ul>
-                                                    <li className="mega-menu-title">Categoría 01</li>
-                                                    <li><a href="shop.html">Aconite</a></li>
-                                                    <li><a href="shop.html">Ageratum</a></li>
-                                                    <li><a href="shop.html">Allium</a></li>
-                                                    <li><a href="shop.html">Anemone</a></li>
-                                                    <li><a href="shop.html">Angelica</a></li>
-                                                    <li><a href="shop.html">Angelonia</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul>
-                                                    <li className="mega-menu-title">Categoría 02</li>
-                                                    <li><a href="shop.html">Balsam</a></li>
-                                                    <li><a href="shop.html">Baneberry</a></li>
-                                                    <li><a href="shop.html">Bee Balm</a></li>
-                                                    <li><a href="shop.html">Begonia</a></li>
-                                                    <li><a href="shop.html">Bellflower</a></li>
-                                                    <li><a href="shop.html">Bergenia</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul>
-                                                    <li className="mega-menu-title">Categoría 03</li>
-                                                    <li><a href="shop.html">Caladium</a></li>
-                                                    <li><a href="shop.html">Calendula</a></li>
-                                                    <li><a href="shop.html">Carnation</a></li>
-                                                    <li><a href="shop.html">Catmint</a></li>
-                                                    <li><a href="shop.html">Celosia</a></li>
-                                                    <li><a href="shop.html">Chives</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul>
-                                                    <li className="mega-menu-title">Categoría 04</li>
-                                                    <li><a href="shop.html">Daffodil</a></li>
-                                                    <li><a href="shop.html">Dahlia</a></li>
-                                                    <li><a href="shop.html">Daisy</a></li>
-                                                    <li><a href="shop.html">Diascia</a></li>
-                                                    <li><a href="shop.html">Dusty Miller</a></li>
-                                                    <li><a href="shop.html">Dame’s Rocket</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="top-hover"><a href="blog-left-sidebar.html">blog</a>
-                                        
-                                        {/*<ul className="submenu">
-                                            <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                            <li><a href="#">Blog Standard <span><Image width='30' height='30' alt='' src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039449/chifa/long-arrow-right_ehuuyk.png" /></span></a>
-                                                <ul className="lavel-menu">
-                                                    <li><a href="blog-left-sidebar.html">left sidebar</a></li>
-                                                    <li><a href="blog-right-sidebar.html">right sidebar</a></li>
-                                                    <li><a href="blog-no-sidebar.html">no sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Post Types <span><Image width='30' height='30' alt='' src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039449/chifa/long-arrow-right_ehuuyk.png" /></span> </a>
-                                                <ul className="lavel-menu">
-                                                    <li><a href="blog-details-standerd.html">Standard post</a></li>
-                                                    <li><a href="blog-details-audio.html">audio post</a></li>
-                                                    <li><a href="blog-details-video.html">video post</a></li>
-                                                    <li><a href="blog-details-gallery.html">gallery post</a></li>
-                                                    <li><a href="blog-details-link.html">link post</a></li>
-                                                    <li><a href="blog-details-quote.html">quote post</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>*/}
-                                        
-                                    </li>
-                                    <li className="top-hover"><a href="#">Páginas</a>
-                                        {/*<ul className="submenu">
-                                            <li><a href="about-us.html">Quienes Somos </a></li>
-                                            <li><a href="shop.html">Tienda</a></li>
-                                            <li><a href="shop-list.html">shop list</a></li>
-                                            <li><a href="product-details.html">product details</a></li>
-                                            <li><a href="cart-page.html">cart page</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
-                                            <li><a href="my-account.html">my account</a></li>
-                                            <li><a href="login-register.html">login / register</a></li>
-                                            <li><a href="contact.html">contactos</a></li>
-                                        </ul>*/}
-                                    </li>
+
                                     <li><a href="contact.html">contactos</a></li>
                                 </ul>
                             </nav>

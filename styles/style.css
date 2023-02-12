@@ -5542,6 +5542,12 @@ transition: 300ms;
     border: 2px solid green;
 
 }
-
+/*modal*/
+.modal-content .modal-header{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: #ffffff;
+}
 
 

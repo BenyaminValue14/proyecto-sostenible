@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react'
 const Layout = ({children}) => {
 
     const [showModal, setShowModal] = useState(false);
+    const [pedido, setPedido] = useState({});
+    const [usuario, setUsuario] = useState({});
 
   useEffect(() => {
     setShowModal(true);
@@ -127,7 +129,11 @@ const Layout = ({children}) => {
         </div>
       </footer>
     </div>
-    <Carta showModal={showModal} setShowModal={setShowModal} />
+    <Carta 
+    showModal={showModal} 
+    setShowModal={setShowModal} 
+    setPedido={setPedido}
+    />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CreditCard = () => {
+const CreditCard = ({nombreCard, numeroCard, fechaCard}) => {
   return (
     <section className="card" id="card">
 
@@ -18,7 +18,12 @@ const CreditCard = () => {
 
                     <div className="group" id="number">
                         <p className="label">Card Number</p>
-						<p className="number">#### #### #### ####</p>
+						<p className="number">
+              <span style={{paddingRight:'8px'}}>{numeroCard.substring(0,4)}</span>
+              <span style={{paddingRight:'8px'}}>{numeroCard.substring(4,8)}</span>
+              <span style={{paddingRight:'8px'}}>{numeroCard.substring(8,12)}</span>
+              <span style={{paddingRight:'8px'}}>{numeroCard.substring(12,16)}</span>
+            </p>
                     </div>
 
 
@@ -26,13 +31,13 @@ const CreditCard = () => {
 
 
                         <div className="group" id="name">
-                            <p className="label"> Cards Holder </p>
-                            <p className="name">John Doe</p>
+                            <p className="label"> Number </p>
+                            <p className="name">{nombreCard}</p>
                         </div>
 
                         <div className="group" id="expiration">
                             <p className="label">Expiration</p>
-                            <p className="expiration"> <span className="month">MM</span> / <span className="year">YY</span> </p>
+                            <p className="expiration"> <span className="month">{fechaCard.substring(0,2)}</span> / <span className="year">{fechaCard.substring(2,4)}</span> </p>
                         </div>
 
 
