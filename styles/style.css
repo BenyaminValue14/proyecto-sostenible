@@ -30,6 +30,15 @@
 -------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:100,200,300,300i,400,500,600,700,800,900|Playfair+Display:400,400i,700,700i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900');
+:root {
+    --brown: #6B1E04;
+    --brown-2: #4e1300;
+    --green-light: #A7C82F;
+    --red: #DC0000;
+    --red-2:#bb0000;
+    --piel: #f8bb6d;
+    --light: #fff3dc;
+}
 body {
     font-family: 'Lora', serif;
     font-weight: 400;
@@ -5510,6 +5519,18 @@ h4.section-title-about::before {
 }
 
 @media only screen and (max-width: 767px) {
+    .carta-content .media-body h5{
+        font-size: 14px;
+    }
+    .carta-content .media-body small{
+        font-size: 12px;
+    }
+    .carta-content  .media-footer {
+        padding-right: 0;
+    }
+    .carta-content  .media-footer span {
+        font-size: 14px;
+    }
 .wrapper-boxed-layout {
 	margin: 0 15px;
 	width: calc(100% - 30px);
@@ -5527,6 +5548,9 @@ section.wn_contact_area {
 }
 
 /*ADD*/
+.modal-header .modal-title {
+    color: var(--brown);
+}
 .carta-content > input {
     display: none;
 }
@@ -5537,17 +5561,100 @@ section.wn_contact_area {
   border-radius: 8px;
 transition: 300ms;
 }
+.carta-image {
+    position: relative;
+    min-height: 60px;
+}
+.carta-content .media-body {
+    padding-left: 4px;
+}
 
 .carta-content input:checked + label {
-    border: 2px solid green;
+    border: 2px solid var(--green-light);
 
+}
+.carta-container .carta-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--brown);
+}
+.carta-container .carta-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--brown);
 }
 /*modal*/
 .modal-content .modal-header{
     position: sticky;
     top: 0;
     z-index: 9;
-    background-color: #ffffff;
+    background-color: var(--light);
+}
+.btn_view_card {
+    background-color: var(--green-light);
+    border-color: var(--green-light);
+    outline: none;
+    border-radius: 8px;
+}
+.btn_view_card :focus {
+    outline: transparent;
 }
 
+.btn_view_card svg path:nth-child(1),
+.btn_view_card svg path:nth-child(2) {
+   
+}
+.button-1 {
+    background-color: var(--red);
+    border-color: var(--red);
+    color: white;
+    font-weight: 600;
+ 
+    border-radius: 10px;
+}
+.button-1:focus,
+.button-1:hover{
+    background-color: var(--red-2);
+    border-color: var(--red-2);
+}
 
+.button-2 {
+    margin-top: 1rem;
+    background-color: var(--brown);
+    border-color: var(--brown);
+    color: white;
+    font-weight: 600;
+ 
+    border-radius: 10px;
+}
+.button-2:focus,
+.button-2:hover{
+    background-color: var(--brown-2);
+    border-color: var(--brown-2);
+}
+.modal .modal-body {
+    background-color: var(--light);
+}
+.form_page .container_form .title_1.title {
+    color: var(--brown);
+}
+
+/*credit card*/
+@media (max-width: 767px) {
+    
+    .form_page .card {
+        min-height: 260px;
+    }
+    .form_page .front,
+    .form_page .back{
+        padding: 16px;
+        padding-top: 30px;
+        min-height: 260px;
+    }
+    .form_page .details .group p{
+        font-size: 16px;
+    }
+    .form_page .details .group .number{
+        font-size: 18px;
+    }
+}

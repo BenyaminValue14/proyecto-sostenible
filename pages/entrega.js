@@ -7,14 +7,16 @@ const entrega = () => {
   return (
     <>
       <Layout>
-        <div className='container'>
-          <p className='title'>¡Gracias por tu compra!</p>
-          <div className='row'>
-            <div className='col-5'>
-              <EntregaUser/>
-            </div>
-            <div className='col-7'>
-              <EntregaProducts/>
+        <div className='entrega'>
+          <div className='container'>
+            <p className='title'>¡Gracias por tu compra!</p>
+            <div className='row'>
+              <div className='col-5'>
+                <EntregaUser/>
+              </div>
+              <div className='col-7'>
+                <EntregaProducts/>
+              </div>
             </div>
           </div>
         </div>

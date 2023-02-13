@@ -6,9 +6,7 @@ const CreditCard = ({nombreCard, numeroCard, fechaCard}) => {
 
             <div className="front">
 
-                <div className="brand-logo" id="brand-logo">
-                    {/* <img src="Img/Logos/visa.png" alt="" /> */}
-                </div>
+               
 
 
                 <img src="https://raw.githubusercontent.com/falconmasters/formulario-tarjeta-credito-3d/master/img/chip-tarjeta.png" className="chip" />

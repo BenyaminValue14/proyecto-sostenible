@@ -13,6 +13,8 @@
     height: 100%;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 .form_page .container_header{
     /*border: 1px solid red;*/
@@ -448,5 +450,11 @@ html body .ui-state-active, .ui-widget-content .ui-state-active{
     .section_form_datos .icon_dropdown
     {
         right: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .form_page > .container {
+        width: 90%;
+        margin: auto;
     }
 }

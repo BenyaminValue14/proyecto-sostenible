@@ -75,10 +75,10 @@ function Carta({showModal, setShowModal}) {
                         <div className="media p-0 m-0 alert alert-dismissible items-list-2 border-0 row">   
                             <a className='carta-image col-3'>
                             {
-                                el.imagen && <Image alt='' src={el.imagen} width={90} height={85} />
+                                el.imagen && <Image alt='' src={el.imagen} fill={true} />
                             }
                             </a>
-                            <div className='media-body col-6 px-0'>
+                            <div className='media-body col-6 px-2'>
                                 <h5 className='mt-0 mb-1'>{el?.nombre}</h5>
                                 {
                                     el.cantidad && <small className='font-w500 mb-3'>{el.cantidad} UNID.</small>
@@ -111,10 +111,10 @@ function Carta({showModal, setShowModal}) {
                           <div className="row media p-0 m-0 alert alert-dismissible items-list-2 border-0">
                               <a className='carta-image col-3'>
                               {
-                                  el.imagen && <Image alt='' src={el.imagen} width={90} height={85} />
+                                  el.imagen && <Image alt='' src={el.imagen} fill={true} />
                               }
                               </a>
-                              <div className='media-body col-6 px-0'>
+                              <div className='media-body col-6 px-2'>
                                   <h5 className='mt-0 mb-1'>{el?.nombre}</h5>
                                   {
                                       el.cantidad && <small className='font-w500 mb-3'>{el.cantidad} UNID.</small>
@@ -136,7 +136,7 @@ function Carta({showModal, setShowModal}) {
                         return (
                           
                             <div key={idx}>
-                                <p className='carta-title'>{el.titulo}</p>
+                                <p className='carta-subtitle'>{el.titulo}</p>
                                 {
                                     el.contenido.map((item,index)=> {
                                         return (
@@ -152,10 +152,10 @@ function Carta({showModal, setShowModal}) {
                                             <div className="row media p-0 mb-4 alert alert-dismissible items-list-2 border-0">
                                             <a className='carta-image col-3'>
                                             {
-                                                item.imagen && <Image alt='' src={item.imagen} width={90} height={85} />
+                                                item.imagen && <Image alt='' src={item.imagen} fill={true} />
                                             }
                                             </a>
-                                            <div className='media-body col-6 px-0'>
+                                            <div className='media-body col-6 px-2'>
                                                 <h5 className='mt-0 mb-1'>{item?.nombre}</h5>
                                                 {
                                                     item.cantidad && <small className='font-w500 mb-3'>{item.cantidad} UNID.</small>
@@ -179,7 +179,7 @@ function Carta({showModal, setShowModal}) {
                 </ul>
             </div>
             </div>
-            <input type="submit" value="Pedir ahora" />
+            <input className='button-1' type="submit" value="Pedir ahora" />
           </form>
         </Modal.Body>
         {/*<Modal.Footer>

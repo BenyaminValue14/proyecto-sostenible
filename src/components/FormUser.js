@@ -56,7 +56,7 @@ const FormUser = () => {
       </div>
 
 
-      <input type="submit" className='btn_send' value="Continuar" />
+      <input type="submit" className='btn_send button-1' value="Continuar" />
     </form>
   )
 }

@@ -19,9 +19,10 @@ const Navbar = ({handleShow}) => {
             <div className="row">
                 <div className="col-lg-3 col-md-4 col-6">
                     <div className="logo">
-                        <a href="index.html">
-                            <Image alt="" src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039036/chifa/logo_mvuekn.png" width='152' height='38' />
-                        </a>
+                        <Link href="/">
+                            {/*<Image alt="" src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039036/chifa/logo_mvuekn.png" width='152' height='38' /> */}
+                            <Image alt='' src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676265990/chifa/logo-2-light_wre4hs.png' width={152} height={50} />
+                        </Link>
                     </div>
                 </div>
                 <div className="col-lg-9 col-md-8 col-6">
@@ -38,7 +39,7 @@ const Navbar = ({handleShow}) => {
                             </nav>
                         </div>
                         <div className="header-currency">
-                            <button onClick={handleShow}>
+                            <button className='btn_view_card' onClick={handleShow}>
                                  <MdMenuBook/> <span>Ver carta</span>
                             </button>
 
@@ -95,14 +96,12 @@ const Navbar = ({handleShow}) => {
             </div>
             <div className="mobile-menu-area">
                 <div className="mobile-menu mean-container">
-                <div className="mean-bar"><a href="#nav" onClick={() => toggle(setMeanclose)} className={meanclose ? "meanmenu-reveal meanclose" : "meanmenu-reveal"}   ><span></span><span></span><span></span></a>
+                <div className="mean-bar"><a  onClick={() => toggle(setMeanclose)} className={meanclose ? "meanmenu-reveal meanclose" : "meanmenu-reveal"}   ><span></span><span></span><span></span></a>
                     <nav className="mean-nav">
                         <ul className={meanclose ? "menu-overflow active" : "menu-overflow"} >
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">pages</a></li>
-                            <li><a href="shop.html"> Shop </a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li className="mean-last"><a href="contact.html"> Contact us </a></li>
+                            <li><Link href="/">Inicio</Link></li>
+                            <li><Link href="about">Quienes Somos</Link></li>
+                            <li><Link href="/"> Contactos </Link></li>
                         </ul>
                     </nav>
                 </div>

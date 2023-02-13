@@ -64,7 +64,7 @@ const FormCard = () => {
         />
         {errors.cvv && <p className='text-error'>{errors.cvv.message}</p>}
       </div>
-      <input type="submit" value="Comprar" />
+      <input type="submit" className='button-2' value="Comprar" />
     </form>
   )
 }

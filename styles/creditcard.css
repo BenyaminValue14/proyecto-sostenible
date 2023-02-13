@@ -31,7 +31,7 @@
 	background: linear-gradient(
 		to bottom right,
 		rgba(255, 255, 255, 0.2),
-		rgba(200, 80, 255, 1)
+		#F8BB6D
 	);
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5),
 	-1 -1 2px #aaa,
