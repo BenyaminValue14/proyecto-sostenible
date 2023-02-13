@@ -7,12 +7,18 @@ const Principal = () => {
   return (
     <>
       <Slider/>
-      <div className='product-area bg-image-1 pt-100 pb-95'>
+      <div className='product-area gray-bg pt-100 pb-95'>
         <div className='product-area-content'>
+          <p className='title-category'>Promociones</p>
         <Products/>
         </div>
       </div>
-      <Frases/>
+      <div className='gray-bg'>
+        <div className='container'>
+          <p className='title-category'>Recomendaciones</p>
+        </div>
+        <Frases/>
+      </div>
     </>
   )
 }

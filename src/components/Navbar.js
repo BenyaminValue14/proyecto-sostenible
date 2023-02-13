@@ -21,7 +21,11 @@ const Navbar = ({handleShow}) => {
                     <div className="logo">
                         <Link href="/">
                             {/*<Image alt="" src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039036/chifa/logo_mvuekn.png" width='152' height='38' /> */}
-                            <Image alt='' src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676265990/chifa/logo-2-light_wre4hs.png' width={152} height={50} />
+                            <Image alt=''
+                            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676265990/chifa/logo-2-light_wre4hs.png' 
+                            width={210} 
+                            height={50} 
+                            />
                         </Link>
                     </div>
                 </div>

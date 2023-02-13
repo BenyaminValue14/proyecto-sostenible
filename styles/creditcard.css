@@ -1,6 +1,8 @@
 .card {
     width: 100%;
-	max-width: 550px;
+	/*max-width: 550px;*/
+	max-width: 380px;
+	margin-inline: auto;
 	position: relative;
     color: #fff;
     transition: .3s ease all;
@@ -28,6 +30,8 @@
 /* Front Card */
 .card .front {
     width: 100%;
+	max-width: 380px;
+	margin-inline: auto;
 	background: linear-gradient(
 		to bottom right,
 		rgba(255, 255, 255, 0.2),

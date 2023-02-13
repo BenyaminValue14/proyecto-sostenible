@@ -109,7 +109,7 @@ const Layout = ({children}) => {
         </div>
     </div>
       <footer className={styles.footer}>
-        <div className="footer-bottom pb-25 pt-25 gray-bg-2"
+        <div className="footer-bottom pb-25 pt-25 "
         style={{width: '90vw'}}
         >
           <div className="container">

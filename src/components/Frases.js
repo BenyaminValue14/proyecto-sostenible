@@ -13,7 +13,7 @@ import Image from 'next/image';
 const Frases = () => {
   return (
     <>
-      <div className='testimonials-area bg-img pt-100 pb-100 gray-bg'>
+      <div className='testimonials-area bg-img pt-80 pb-100 gray-bg'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-12 col-md-12 col-12'>
