@@ -1,12 +1,13 @@
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import menu from '../db/menu.json';
 import {useForm} from 'react-hook-form';
 import { useRouter } from 'next/router'
+import Context, { Globales } from '../context/context';
 
-function Carta({showModal, setShowModal, setPedido}) {
+function Carta({showModal, setShowModal}) {
   //const [show, setShow] = useState(false);
   const {handleSubmit, register} = useForm({
     defaultValues: {
@@ -18,7 +19,8 @@ function Carta({showModal, setShowModal, setPedido}) {
   const [entradas, setEntradas] = useState([]);
   const [platos, setPlatos] = useState([]);
   const [bebidas, setBebidas] = useState([]);
-  const router = useRouter()
+  const router = useRouter();
+  const {setPedido} = useContext(Globales);
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
@@ -34,13 +36,15 @@ function Carta({showModal, setShowModal, setPedido}) {
     setBebidas(menu.bebidas);
   }, []);
 
+  
+
   const onChange = (e) => {
     console.log(e.target.value);
   }
   const submitCarta = (data) => {
     setPedido(data);
     console.log(JSON.stringify(data));
-    router.push("form");
+    router.push('form');
 
   };
 
@@ -65,7 +69,7 @@ function Carta({showModal, setShowModal, setPedido}) {
                       {...register("entradas")}
                       type="checkbox" 
                       id={el.id} 
-                      value={el.id}
+                      value={JSON.stringify(el)}
                       />
                       <label htmlFor={el.id} className=" mb-4 w-100">
                         <div className="media p-0 m-0 alert alert-dismissible items-list-2 border-0 row">   
@@ -101,7 +105,7 @@ function Carta({showModal, setShowModal, setPedido}) {
                       {...register("platos")}
                       type="checkbox" 
                       id={el.id} 
-                      value={el.id}
+                      value={JSON.stringify(el)}
                       />
                         <label htmlFor={el.id} className="mb-4 w-100">
                           <div className="row media p-0 m-0 alert alert-dismissible items-list-2 border-0">
@@ -142,7 +146,7 @@ function Carta({showModal, setShowModal, setPedido}) {
                                           {...register("bebidas")}
                                           type="checkbox" 
                                           id={item.id} 
-                                          value={item.id}
+                                          value={JSON.stringify(item)}
                                           />
                                            <label htmlFor={item.id} className="mb-4 w-100">
                                             <div className="row media p-0 mb-4 alert alert-dismissible items-list-2 border-0">

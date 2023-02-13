@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
+import { useRouter } from 'next/router';
+import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form';
+import { Globales } from '../context/context';
 import CreditCard from './CreditCard';
 
 const FormCard = () => {
   const [nombreCard, setNombreCard] = useState('');
   const [numeroCard, setNumeroCard] = useState('################');
   const [fechaCard, setFechaCard] = useState('MMYY');
-
+  //const {} = useContext(Globales);
+  const router = useRouter();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    router.push("entrega");
   }
 
   return (

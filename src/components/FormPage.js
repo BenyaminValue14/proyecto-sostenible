@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { Globales } from '../context/context';
 import CreditCard from './CreditCard'
 import FormCard from './FormCard';
 import FormUser from './FormUser'
 
 const FormPage = () => {
-  const [usuario, setUsuario] = useState({});
+
+  const {usuario} = useContext(Globales);
+  //const [usuario, setUsuario] = useState({});
   useEffect(() => {
     console.log();
 
@@ -24,7 +27,6 @@ const FormPage = () => {
           :
           (
             <FormUser
-            setUsuario={setUsuario}
             />
           )
         }

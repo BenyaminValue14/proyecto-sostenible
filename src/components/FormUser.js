@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { use, useContext } from 'react'
 import { useForm } from 'react-hook-form';
+import { Globales } from '../context/context';
 
-const FormUser = ({setUsuario}) => {
+
+const FormUser = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const {usuario, setUsuario} = useContext(Globales);
   const onSubmit = data => {
     //data llega ser un objeto
     const keys = Object.keys(data);

@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from './Slider'
 import Products from './Products'
+import Frases from './Frases'
 
 const Principal = () => {
   return (
@@ -11,6 +12,7 @@ const Principal = () => {
         <Products/>
         </div>
       </div>
+      <Frases/>
     </>
   )
 }

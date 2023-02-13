@@ -1174,3 +1174,18 @@
 	}
     
 }
+.mobile-menu .mean-nav ul.menu-overflow {
+  height: 216px;
+  margin-top: 10px;
+  overflow-y: hidden;
+  max-height: 0;
+  transition: 0.75s;
+}
+.mobile-menu .mean-nav ul.menu-overflow.active {
+  height: 216px;
+  margin-top: 10px;
+  overflow-y: auto;
+  transition: 1s;
+  max-height: 216px;
+
+}

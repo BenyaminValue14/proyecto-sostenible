@@ -31,7 +31,7 @@ const Navbar = ({handleShow}) => {
                                 <ul>
                                     <li className="top-hover"><Link href="/" >Inicio</Link></li>
 
-                                    <li><a href="about-us.html">Quienes Somos</a></li>
+                                    <li><Link href="about">Quienes Somos</Link></li>
 
                                     <li><a href="contact.html">contactos</a></li>
                                 </ul>

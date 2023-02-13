@@ -2,18 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from './Navbar'
 import Carta from './Carta'
+import { useRouter } from 'next/router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../../styles/Home.module.css'
 import { useEffect, useState } from 'react'
 
+
 const Layout = ({children}) => {
 
     const [showModal, setShowModal] = useState(false);
-    const [pedido, setPedido] = useState({});
-    const [usuario, setUsuario] = useState({});
-
+    
+    const router = useRouter();
   useEffect(() => {
-    setShowModal(true);
+    if(router.pathname ==="/") {
+      setShowModal(true);
+    }
   }, []);
 
   const handleShow = () => setShowModal(true);
@@ -132,7 +135,6 @@ const Layout = ({children}) => {
     <Carta 
     showModal={showModal} 
     setShowModal={setShowModal} 
-    setPedido={setPedido}
     />
     </>
   )
