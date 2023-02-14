@@ -8,10 +8,12 @@ const EntregaProducts = () => {
   const [entradas, setEntradas] = useState([]);
   const [platos, setPlatos] = useState([]);
   const [bebidas, setBebidas] = useState([]);
+  const [isContent, setIsContent] = useState(false);
 
   useEffect(()=> {
     if (!!pedido) {
       if(pedido.bebidas.length > 0) {
+        setIsContent(true);
         let arr = [];
         pedido.bebidas.forEach(element => {
           const value = JSON.parse(element);
@@ -43,15 +45,26 @@ const EntregaProducts = () => {
   return (
     <div>
       <div className='row'>
-        <div className='col-2'>
-          <p>Categoría</p>
-        </div>
-        <div className='col-5'>
-          <p>Producto</p>
-        </div>
-        <div className='col-4'>
-          <p>Subtotal</p>
-        </div>
+        {
+          isContent === true
+          ?
+          (
+            <>
+            <div className='col-3 col-lg-2'>
+              <p>Categoría</p>
+            </div>
+            <div className='col-5 col-lg-5'>
+              <p>Producto</p>
+            </div>
+            <div className='col-3 col-lg-4'>
+              <p>Subtotal</p>
+            </div>
+            </>
+          )
+          :
+          <p className='text-alert'>Aun no tienes productos</p>
+        }
+        
       </div>
       {
         entradas.length > 0
@@ -59,7 +72,7 @@ const EntregaProducts = () => {
         entradas.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-2 relative'>
+            <div className='col-3 col-lg-2 relative'>
               <Image 
               src={el.imagen} 
               alt=''
@@ -67,10 +80,10 @@ const EntregaProducts = () => {
               height={80}
               />
             </div>
-            <div className='col-5'>
+            <div className='col-5 col-lg-5'>
               <p>{el.nombre}</p>
             </div>
-            <div className='col-4'>
+            <div className='col-3 col-lg-4'>
               <p>S/{el.precio}0</p>
             </div>
             </div>
@@ -84,7 +97,7 @@ const EntregaProducts = () => {
         platos.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-2 relative'>
+            <div className='col-3 col-lg-2 relative'>
             <Image 
               src={el.imagen} 
               alt=''
@@ -92,10 +105,10 @@ const EntregaProducts = () => {
               height={80}
               />
             </div>
-            <div className='col-5'>
+            <div className='col-5 col-lg-5'>
               <p>{el.nombre}</p>
             </div>
-            <div className='col-4'>
+            <div className='col-3 col-lg-4'>
               <p>S/{el.precio}0</p>
             </div>
             </div>
@@ -109,7 +122,7 @@ const EntregaProducts = () => {
         bebidas.map((el, idx) => {
           return (
             <div key={el.id} className="row pb-3">
-            <div className='col-2 relative'>
+            <div className='col-3 col-lg-2 relative'>
             <Image 
               src={el.imagen} 
               alt=''
@@ -117,10 +130,10 @@ const EntregaProducts = () => {
               height={80}
               />
             </div>
-            <div className='col-5'>
+            <div className='col-5 col-lg-5'>
               <p>{el.nombre}</p>
             </div>
-            <div className='col-4'>
+            <div className='col-3 col-lg-4'>
               <p>S/{el.precio}0</p>
             </div>
             </div>

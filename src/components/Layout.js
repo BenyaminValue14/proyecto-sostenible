@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../../styles/Home.module.css'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 
 const Layout = ({children}) => {
@@ -36,54 +37,38 @@ const Layout = ({children}) => {
       <div className="footer-top gray-bg-3 pb-35 pt-75">
         <div className="container">
             <div className="row">
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="footer-widget mb-40">
                         <div className="footer-title mb-25">
-                            <h4>Cuenta</h4>
+                            <h4>Chifa Vegan</h4>
                         </div>
                         <div className="footer-content">
-                            <ul>
-                                <li><a href="my-account.html">Cuenta</a></li>
-                                <li><a href="about-us.html">Nuestra Historia</a></li>
-                                <li><a href="#">Newsletter</a></li>
-                                <li><a href="#">Convenios Internacionales</a></li>
-                            </ul>
+                          <div className='footer-content-image'>
+                            <Image 
+                            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676265487/chifa/iso-1-light_cpicmc.png'
+                              alt=''
+                              fill={true}
+                            />
+                          </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="footer-widget mb-40">
                         <div className="footer-title mb-25">
                             <h4>Información</h4>
                         </div>
                         <div className="footer-content">
                             <ul>
-                                <li><a href="about-us.html">Quienes Somos</a></li>
-                                <li><a href="#">Envios a Delivery</a></li>
-                                <li><a href="#">Politicas y Privacidad</a></li>
-                                <li><a href="#">Términos y Condiciones</a></li>
-                                <li><a href="#">Nuestro Servicio</a></li>
+                              <li><Link href="/">Inicio</Link></li>
+                                <li><Link href="about">Quienes Somos</Link></li>
+                                <li><Link href="about">Nuestro equipo</Link></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
-                    <div className="footer-widget mb-40">
-                        <div className="footer-title mb-25">
-                            <h4>Otros enlaces</h4>
-                        </div>
-                        <div className="footer-content">
-                            <ul>
-                                <li><a href="#">Centro de Soporte</a></li>
-                                <li><a href="#">Terminos y condciones</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Politicas de privacidad</a></li>
-                                <li><a href="#">Ayuda</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
+
+                <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="footer-widget footer-widget-red footer-black-color mb-40">
                         <div className="footer-title mb-25">
                             <h4>Contactos</h4>

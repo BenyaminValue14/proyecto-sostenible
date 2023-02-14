@@ -68,24 +68,24 @@ const FormPage = () => {
         </div>
         <div className='container_image'>
             <div className='container_form'>
+            <p className='title_1 title'>Detalle de pedido</p>
             {
         entradas.length > 0
         && 
         entradas.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-2 relative'>
+            <div className='col-3 col-sm-2 relative'>
               <Image 
               src={el.imagen} 
               alt=''
-              width={120}
-              height={80}
+              fill={true}
               />
             </div>
-            <div className='col-5'>
+            <div className='col-6 col-sm-5'>
               <p>{el.nombre}</p>
             </div>
-            <div className='col-4'>
+            <div className='col-3 col-sm-2'>
               <p>S/{el.precio}0</p>
             </div>
             </div>
@@ -99,18 +99,17 @@ const FormPage = () => {
         platos.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-2 relative'>
-            <Image 
+            <div className='col-3 col-sm-2 relative'>
+              <Image 
               src={el.imagen} 
               alt=''
-              width={120}
-              height={80}
+              fill={true}
               />
             </div>
-            <div className='col-5'>
+            <div className='col-6 col-sm-5'>
               <p>{el.nombre}</p>
             </div>
-            <div className='col-4'>
+            <div className='col-3 col-sm-2'>
               <p>S/{el.precio}0</p>
             </div>
             </div>
@@ -124,18 +123,17 @@ const FormPage = () => {
         bebidas.map((el, idx) => {
           return (
             <div key={el.id} className="row pb-3">
-            <div className='col-2 relative'>
-            <Image 
+            <div className='col-3 col-sm-2 relative'>
+              <Image 
               src={el.imagen} 
               alt=''
-              width={120}
-              height={80}
+              fill={true}
               />
             </div>
-            <div className='col-5'>
+            <div className='col-6 col-sm-5'>
               <p>{el.nombre}</p>
             </div>
-            <div className='col-4'>
+            <div className='col-3 col-sm-2'>
               <p>S/{el.precio}0</p>
             </div>
             </div>

@@ -23,8 +23,7 @@ const Navbar = ({handleShow}) => {
                             {/*<Image alt="" src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039036/chifa/logo_mvuekn.png" width='152' height='38' /> */}
                             <Image alt=''
                             src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676265990/chifa/logo-2-light_wre4hs.png' 
-                            width={210} 
-                            height={50} 
+                            fill={true}
                             />
                         </Link>
                     </div>
@@ -38,7 +37,7 @@ const Navbar = ({handleShow}) => {
 
                                     <li><Link href="about">Quienes Somos</Link></li>
 
-                                    <li><a href="contact.html">contactos</a></li>
+                                    <li><Link href="/">contactos</Link></li>
                                 </ul>
                             </nav>
                         </div>

@@ -7,14 +7,14 @@ const entrega = () => {
   return (
     <>
       <Layout>
-        <div className='entrega'>
+        <div className='entrega gray-bg'>
           <div className='container'>
             <p className='title'>¡Gracias por tu compra!</p>
             <div className='row'>
-              <div className='col-5'>
+              <div className='col-12 col-lg-5'>
                 <EntregaUser/>
               </div>
-              <div className='col-7'>
+              <div className='col-12 col-lg-7'>
                 <EntregaProducts/>
               </div>
             </div>

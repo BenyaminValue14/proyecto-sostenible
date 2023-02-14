@@ -47,6 +47,17 @@ body {
     font-size: 14px;
     color: #242424;
 }
+.row .text-alert {
+    background-color: var(--piel);
+    color: var(--brown);
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 1rem;
+    max-width: 320px;
+    margin-inline: auto;
+}
 .img {
     max-width: 100%;
     transition: all 0.3s ease-out 0s;
@@ -1558,6 +1569,8 @@ textarea:focus {
 }
 .logo {
     position: relative;
+    width: 210px;
+    height: 50px;
 
 }
 /*.logo img{
@@ -5183,7 +5196,7 @@ blockquote {
   position: relative;
 }
 .overview-content-2 > h4 {
-  color: #519f10;
+  color: var(--red);
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -5300,6 +5313,7 @@ blockquote {
 }
 .team-img img {
     width: 100%;
+    object-fit: contain;
 }
 .team-content {
     box-shadow: 0 3px 5px rgba(85, 85, 85, 0.2);
@@ -5355,6 +5369,7 @@ h4.section-title-about::before {
 }
 .overview-img.text-center img {
     max-width: 100%;
+    object-fit: contain;
 }
 
 /*------ 14. Testimonial page -------*/
@@ -5645,7 +5660,19 @@ transition: 300ms;
 .form_page .container_form .title_1.title {
     color: var(--brown);
 }
-
+.footer-content .footer-content-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.title-category {
+    font-family: "Montserrat",sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--brown);
+    font-weight: 600;
+    text-align: center;
+}
 /*credit card*/
 @media (max-width: 767px) {
     
@@ -5663,6 +5690,13 @@ transition: 300ms;
     }
     .form_page .details .group .number{
         font-size: 18px;
+    }
+    .header-bottom .logo {
+        width: 145px;
+        height: 45px;
+    }
+    .title-category {
+        font-size: 1.5rem;
     }
 }
 .group_section_form_datos input {
@@ -5682,11 +5716,4 @@ transition: 300ms;
         max-width: 320px;
     }
 }
-.title-category {
-    font-family: "Montserrat",sans-serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--brown);
-    font-weight: 600;
-    text-align: center;
-}
+

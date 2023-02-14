@@ -460,4 +460,10 @@ html body .ui-state-active, .ui-widget-content .ui-state-active{
         width: 90%;
         margin: auto;
     }
+    .group_section_form_datos input {
+        max-width: 320px;
+    }
+    .form_page .container_form{
+        margin-bottom: 2rem;
+    }
 }

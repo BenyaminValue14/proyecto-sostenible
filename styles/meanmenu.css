@@ -29,14 +29,14 @@ a.meanmenu-reveal{display:none}
 .mean-container .mean-nav{float:left;width:100%;background:transparent}
 .mean-container .mean-nav ul{padding:0;margin:0;width:100%;list-style-type:none}
 .mean-container .mean-nav ul li {
-  background: #f8f8f8 none repeat scroll 0 0;
+  background: #fefbf0 none repeat scroll 0 0;
   float: left;
   position: relative;
   width: 100%;
   border-top: 1px solid#ddd;
 }
 .mean-container .mean-nav ul li a {
-  background: #f8f8f8 none repeat scroll 0 0;
+  background: #fefbf0 none repeat scroll 0 0;
   color: #242424;
   display: block;
   float: left;
