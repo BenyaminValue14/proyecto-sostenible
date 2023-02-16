@@ -5205,6 +5205,11 @@ blockquote {
     font-weight: 500;
     margin-bottom: 21px;
 }
+@media only screen and (max-width: 767px) {
+    .overview-content-2 > p.peragraph-blog {
+        text-align: justify;
+    }
+}
 .count-icon span {
     font-size: 50px;
     line-height: 1;

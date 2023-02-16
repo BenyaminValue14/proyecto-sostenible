@@ -14,7 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
-
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -24,7 +27,11 @@ a {
     background: black;
   }
 }
-.swiper .swiper-slide img {
+.swiper .swiper-slide img.banner {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-slide img:not(:nth-child(1)) {
   filter: brightness(0.5);
 }
 .text-slider {
@@ -81,4 +88,6 @@ a {
     font-size: 0.875rem;
   }
 }
-
+.font-weight-bold {
+  font-weight: 600;
+}

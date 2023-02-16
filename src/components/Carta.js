@@ -88,7 +88,7 @@ function Carta({showModal, setShowModal}) {
                                 }
                             </div>
                             <div className='col-3 media-footer align-self-center ml-auto d-block align-items-center d-sm-flex'>
-                                <span>{el.precio ? `S/. ${el.precio}0` : 0.00 }</span>
+                                <span>{el.precio ? `S/. ${ (el.precio).toFixed(2) }` : 0.00 }</span>
                             </div>
                         </div>
                       </label>
@@ -126,7 +126,7 @@ function Carta({showModal, setShowModal}) {
                                   }
                               </div>
                               <div className='col-3 media-footer align-self-center ml-auto d-block align-items-center d-sm-flex'>
-                                  <span>{el.precio ? `S/. ${el.precio}0` : 0.00 }</span>
+                                  <span>{el.precio ? `S/. ${ (el.precio).toFixed(2) }` : 0.00 }</span>
                               </div>
                           </div>
                         </label>
@@ -169,7 +169,7 @@ function Carta({showModal, setShowModal}) {
                                                 }
                                             </div>
                                             <div className='col-3 media-footer align-self-center ml-auto d-block align-items-center d-sm-flex'>
-                                                <span>{item.precio ? `S/. ${item.precio}0` : 0.00 }</span>
+                                                <span>{item.precio ? `S/. ${(item.precio).toFixed(2)}` : 0.00 }</span>
                                             </div>
                                             </div>
                                            </label>

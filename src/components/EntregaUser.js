@@ -16,19 +16,19 @@ const EntregaUser = () => {
             <p>Tu pedido llegará en 20 minutos</p>
           </div>
           <div>
-            <p>Nombre:</p>
+            <p className='mb-1 font-weight-bold'>Nombre:</p>
             <p>{usuario?.first_name}</p>
           </div>
           <div>
-            <p>DNI:</p>
+            <p className='mb-1 font-weight-bold'>Número DNI:</p>
             <p>{usuario?.document_number}</p>
           </div>
           <div>
-            <p>Celular:</p>
+            <p className='mb-1 font-weight-bold'>Celular:</p>
             <p>{usuario?.phone}</p>
           </div>
           <div>
-            <p>Dirección de envío:</p>
+            <p className='mb-1 font-weight-bold'>Dirección de envío:</p>
             <p>{usuario?.address}</p>
           </div>
           </>

@@ -38,7 +38,7 @@ const FormUser = () => {
           {errors.phone && <p className='text-error'>{errors.phone.message}</p>}
         </div>
         <div className='group_section_form_datos'>
-          <label htmlFor="document_number">DNI</label>
+          <label htmlFor="document_number">Número DNI</label>
           <input type="tel" {...register("document_number", {
             required: 'Campo requerido',
             minLength: {

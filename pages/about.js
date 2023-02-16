@@ -20,11 +20,11 @@ const about = () => {
                 <div className="overview-content-2">
                   <h4>Bienvedios a</h4>
                   <h2>Chifa Vegan!</h2>
-                  <p className="peragraph-blog">CHIFA VEGAN es un restaurant altamente versátil, ideal para remplazar en todo tipo de preparaciones que llevan derivado animal.  Contamos con diferentes variedades de platos y bebidas que puedas combinar a su agrado, nos identificamos por mantener el respeto y ética hacia los animales, queremos que todos nos conozcan por nuestra buen sazón y calidad de atención. Comunícate con nosotros a través de nuestras redes sociales o pagina web.</p>
+                  <p className="peragraph-blog">Somos un restaurante que brinda un excelente servicio de alimentación a base de plantas, ofreciendo una variedad de platos orientales y bebidas para degustar.  Nos identificamos por mantener el respeto y ética hacia los animales, siendo reconocidos por nuestra buena sazón. Comunícate con nosotros a través de nuestras redes sociales o página web.</p>
                   <h4>Visión</h4>
-                  <p>Ser reconocidos en el Perú por nuestra variedad de platos occidentales, una rápida entrega en nuestros productos y destacar por nuestra agradable atención.</p>
+                  <p className="peragraph-blog">Ser reconocidos en el Perú por nuestra variedad de platos occidentales, una rápida entrega de nuestro producto y destacar por nuestra excelente atención.</p>
                   <h4>Misión</h4>
-                  <p>En CHIFA VENGAN nos enfocaremos en preparar distinta variedad de platos con nuevos ingredientes que contenga excelente sabor y textura y, por supuesto, un precio accesible.</p>
+                  <p className="peragraph-blog">Somos el primer chifa vegano especializado en una alimentación a base de plantas, promoviendo conciencia en el respeto hacia los animales, cumpliendo las expectativas de nuestros consumidores.</p>
                   <div className="overview-btn mt-40">
                     <Image width={127} height={49} src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676043183/chifa/signature_xgtn9l.png" alt="Candidate Signature" />
                   </div>
@@ -65,7 +65,7 @@ const about = () => {
                     />
                   </div>
                   <div className='team-content text-center'>
-                    <h4>Luis</h4>
+                    <h4>Luis Carhuamaca</h4>
                     <span>Integrante</span>
                   </div>  
                 </div>
@@ -81,7 +81,7 @@ const about = () => {
                     />
                   </div>
                   <div className='team-content text-center'>
-                    <h4>Dayana</h4>
+                    <h4>Dayana Ramos</h4>
                     <span>Integrante</span>
                   </div>  
                 </div>
@@ -97,7 +97,7 @@ const about = () => {
                     />
                   </div>
                   <div className='team-content text-center'>
-                    <h4>Milagros</h4>
+                    <h4>Milagros Leiva</h4>
                     <span>Integrante</span>
                   </div>  
                 </div>

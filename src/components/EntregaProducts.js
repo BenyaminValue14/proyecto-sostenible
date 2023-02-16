@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const EntregaProducts = () => {
 
-  const {pedido} = useContext(Globales);
+  const { pedido, efectivo } = useContext(Globales);
   //state
   const [entradas, setEntradas] = useState([]);
   const [platos, setPlatos] = useState([]);
@@ -17,9 +17,9 @@ const EntregaProducts = () => {
   const [tp, setTp] = useState([]);
   const [tb, setTb] = useState([]);
 
-  useEffect(()=> {
+  useEffect(() => {
     if (!!pedido) {
-      if(pedido.bebidas.length > 0) {
+      if (pedido.bebidas.length > 0) {
         setIsContent(true);
         let arr = [];
         let price = [];
@@ -34,7 +34,7 @@ const EntregaProducts = () => {
       }
       //if(pedido.platos.length > 0) setPlatos(JSON.parse(pedido.platos));
       //if(pedido.entradas.length > 0) setEntradas(JSON.parse(pedido.entradas));
-      if(pedido.entradas.length > 0) {
+      if (pedido.entradas.length > 0) {
         let arr = [];
         let price = [];
         pedido.entradas.forEach(element => {
@@ -47,7 +47,7 @@ const EntregaProducts = () => {
         setTe(price);
       }
 
-      if(pedido.platos.length > 0) {
+      if (pedido.platos.length > 0) {
         let arr = [];
         let price = [];
         pedido.platos.forEach(element => {
@@ -80,45 +80,45 @@ const EntregaProducts = () => {
         <p className='title'>Detalle de Pedido</p>
         {
           isContent === true
-          ?
-          (
-            <>
-            <div className='col-4 col-lg-2'>
-              <p>Categoría</p>
-            </div>
-            <div className='col-5 col-lg-5'>
-              <p>Producto</p>
-            </div>
-            <div className='col-3 col-lg-4'>
-              <p>Subtotal</p>
-            </div>
-            </>
-          )
-          :
-          <p className='text-alert'>Aun no tienes productos</p>
+            ?
+            (
+              <>
+                <div className='col-4 col-lg-2'>
+                  <p>Categoría</p>
+                </div>
+                <div className='col-5 col-lg-5'>
+                  <p>Producto</p>
+                </div>
+                <div className='col-3 col-lg-4'>
+                  <p>Subtotal</p>
+                </div>
+              </>
+            )
+            :
+            <p className='text-alert'>Aun no tienes productos</p>
         }
-        
+
       </div>
       {
         entradas.length > 0
-        && 
+        &&
         entradas.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-4 col-lg-2 relative'>
-              <Image 
-              src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'} 
-              alt=''
-              width={80}
-              height={80}
-              />
-            </div>
-            <div className='col-5 col-lg-5'>
-              <p>{el.nombre}</p>
-            </div>
-            <div className='col-3 col-lg-4'>
-              <p>S/{el.precio}0</p>
-            </div>
+              <div className='col-4 col-lg-2 relative'>
+                <Image
+                  src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'}
+                  alt=''
+                  width={80}
+                  height={80}
+                />
+              </div>
+              <div className='col-5 col-lg-5'>
+                <p>{el.nombre}</p>
+              </div>
+              <div className='col-3 col-lg-4'>
+                <p>S/{(el.precio).toFixed(2)}</p>
+              </div>
             </div>
           )
         })
@@ -126,24 +126,24 @@ const EntregaProducts = () => {
 
       {
         platos.length > 0
-        && 
+        &&
         platos.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-4 col-lg-2 relative'>
-            <Image 
-              src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'} 
-              alt=''
-              width={80}
-              height={80}
-              />
-            </div>
-            <div className='col-5 col-lg-5'>
-              <p>{el.nombre}</p>
-            </div>
-            <div className='col-3 col-lg-4'>
-              <p>S/{el.precio}0</p>
-            </div>
+              <div className='col-4 col-lg-2 relative'>
+                <Image
+                  src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'}
+                  alt=''
+                  width={80}
+                  height={80}
+                />
+              </div>
+              <div className='col-5 col-lg-5'>
+                <p>{el.nombre}</p>
+              </div>
+              <div className='col-3 col-lg-4'>
+                <p>S/{(el.precio).toFixed(2)}</p>
+              </div>
             </div>
           )
         })
@@ -151,33 +151,42 @@ const EntregaProducts = () => {
 
       {
         bebidas.length > 0
-        && 
+        &&
         bebidas.map((el, idx) => {
           return (
             <div key={el.id} className="row pb-3">
-            <div className='col-4 col-lg-2 relative'>
-            <Image 
-              src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'} 
-              alt=''
-              width={80}
-              height={80}
-              />
-            </div>
-            <div className='col-5 col-lg-5'>
-              <p>{el.nombre}</p>
-            </div>
-            <div className='col-3 col-lg-4'>
-              <p>S/{el.precio}0</p>
-            </div>
+              <div className='col-4 col-lg-2 relative'>
+                <Image
+                  src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'}
+                  alt=''
+                  width={80}
+                  height={80}
+                />
+              </div>
+              <div className='col-5 col-lg-5'>
+                <p>{el.nombre}</p>
+              </div>
+              <div className='col-3 col-lg-4'>
+                <p>S/{(el.precio).toFixed(2)}</p>
+              </div>
             </div>
           )
         })
       }
       <div className="row pb-3 w-100">
-      <div className='col-4 col-sm-2 relative'></div>
-      <div className='col-5 col-sm-5 bold'><strong>Total:</strong></div>
-      <div className='col-3 col-sm-2 bold'><strong>S/{total}</strong></div>
+        <div className='col-4 col-sm-2 relative'></div>
+        <div className='col-5 col-sm-5 bold'><strong>Total:</strong></div>
+        <div className='col-3 col-sm-2 bold'><strong>S/{total}</strong></div>
       </div>
+      {
+        efectivo.length > 0 && (
+          <div className='row pb-3 w-100'>
+            <p>Pago en efectivo: S/{efectivo.length > 0 && parseFloat(efectivo).toFixed(2)}</p>
+            <p>El cambio de su pago en efectivo será de: S/{(parseFloat(efectivo) - parseFloat(total)).toFixed(2)} </p>
+          </div>
+        )
+      }
+
     </div>
   )
 }

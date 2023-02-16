@@ -30,7 +30,7 @@ const Frases = () => {
                       />
                     </div>
                     <p>
-                      La juventud es corta. Cuida de ti alentándote de forma sana, para que disfrutes hasta en la vejez, que es larga.
+                      La juventud es corta. Cuida de ti alimentándote de forma sana, para que disfrutes hasta en la vejez, que es larga.
                     </p>
                     <h4>
                       Anonimo
@@ -50,7 +50,7 @@ const Frases = () => {
                       />
                     </div>
                     <p>
-                      La juventud es corta. Cuida de ti alentándote de forma sana, para que disfrutes hasta en la vejez, que es larga.
+                      La juventud es corta. Cuida de ti alimentándote de forma sana, para que disfrutes hasta en la vejez, que es larga.
                     </p>
                     <h4>
                       Anonimo

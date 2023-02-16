@@ -98,7 +98,9 @@ const FormPage = () => {
           Object.keys(usuario).length > 0
           ? 
           (
-            <FormCard/>
+            <FormCard
+              total={total}
+            />
           )
           :
           (
@@ -129,7 +131,7 @@ const FormPage = () => {
               <p>{el.nombre}</p>
             </div>
             <div className='col-3 col-sm-2'>
-              <p>S/{el.precio}0</p>
+              <p>S/{ (el.precio).toFixed(2) }</p>
             </div>
             </div>
           )
@@ -153,7 +155,7 @@ const FormPage = () => {
               <p>{el.nombre}</p>
             </div>
             <div className='col-3 col-sm-2'>
-              <p>S/{el.precio}0</p>
+              <p>S/{ (el.precio).toFixed(2) }</p>
             </div>
             </div>
           )
@@ -177,7 +179,7 @@ const FormPage = () => {
               <p>{el.nombre}</p>
             </div>
             <div className='col-3 col-sm-2'>
-              <p>S/{el.precio}0</p>
+              <p>S/{ (el.precio).toFixed(2) }</p>
             </div>
             </div>
           )

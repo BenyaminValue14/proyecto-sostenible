@@ -50,7 +50,7 @@
             "id":"Chaufa-vegano",
             "nombre":"Chaufa vegano",
             "cantidad":"",
-            "precio":20.90,
+            "precio":40,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083630/chifa/products/Chaufa-vegano_fuyqvv.jpg"
             
         },
@@ -58,7 +58,7 @@
             "id":"Tofu-agridulce-con-verduras",
             "nombre":"Tofu agridulce con verduras",
             "cantidad":"",
-            "precio":20.90,
+            "precio":48,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083630/chifa/products/Sweet-Sour-Tofu_go9wsq.jpg"
             
         },
@@ -66,7 +66,7 @@
             "id":"Salteado-de-Tofu-con-Brotes-de-Soja",
             "nombre":"Salteado de Tofu con Brotes de Soja",
             "cantidad":"",
-            "precio":20.90,
+            "precio":44,
             "imagen":""
             
         },
@@ -75,7 +75,7 @@
             "id":"Aeropuerto-de-quinua-multicolor",
             "nombre":"Aeropuerto de quinua multicolor",
             "cantidad":"",
-            "precio":20.90,
+            "precio":48,
             "imagen":""
             
         },
@@ -83,7 +83,7 @@
             "id":"Salteado-de-acelgas-y-tofu",
             "nombre":"Salteado de acelgas y tofu",
             "cantidad":"",
-            "precio":20.90,
+            "precio":46,
             "imagen":""
             
         },
@@ -91,7 +91,7 @@
             "id":"Chaufa-de-Tofu-picante-con-guisantes",
             "nombre":"Chaufa de Tofu picante con guisantes",
             "cantidad":"",
-            "precio":20.90,
+            "precio":50,
             "imagen":""
             
         },
@@ -99,7 +99,7 @@
             "id":"Chaufa-de-Brócoli-y-Tofu-en-Salsa-de-Ajo",
             "nombre":"Chaufa de Brócoli y Tofu en Salsa de Ajo",
             "cantidad":"",
-            "precio":20.90,
+            "precio":44,
             "imagen":""
             
         },
@@ -107,7 +107,7 @@
             "id":"TOFU-EN-TROZOS-CON-TAUSÍ-Y-VERDURAS",
             "nombre":"TOFU EN TROZOS CON TAUSÍ Y VERDURAS",
             "cantidad":"",
-            "precio":20.90,
+            "precio":50,
             "imagen":""
             
         },
@@ -115,7 +115,7 @@
             "id":"TIPAKAY-DE-TOFU",
             "nombre":"TIPAKAY DE TOFU",
             "cantidad":"",
-            "precio":20.90,
+            "precio":46,
             "imagen":""
             
         }
@@ -128,7 +128,7 @@
                     "id":"MIX-VEGAN",
                     "nombre":"MIX VEGAN",
                     "cantidad":"",
-                    "precio":15.50,
+                    "precio":15,
                     "imagen":""
                     
                 },
@@ -136,7 +136,7 @@
                     "id":"FRUTOS-ROJOS",
                     "nombre":"FRUTOS ROJOS",
                     "cantidad":"",
-                    "precio":15.50,
+                    "precio":15,
                     "imagen":""
                     
                 },
@@ -144,7 +144,7 @@
                     "id":"TROPICAL",
                     "nombre":"TROPICAL",
                     "cantidad":"",
-                    "precio":15.50,
+                    "precio":15,
                     "imagen":""
                     
                 }
@@ -157,7 +157,7 @@
                     "id":"NARANJADA",
                     "nombre":"NARANJADA",
                     "cantidad":"",
-                    "precio":9.90,
+                    "precio":9,
                     "imagen":""
                     
                 },
@@ -165,7 +165,7 @@
                     "id":"LIMONADA",
                     "nombre":"LIMONADA",
                     "cantidad":"",
-                    "precio":9.90,
+                    "precio":9,
                     "imagen":""
                     
                 },
@@ -173,7 +173,7 @@
                     "id":"MARACUYA",
                     "nombre":"MARACUYÁ",
                     "cantidad":"",
-                    "precio":9.90,
+                    "precio":9,
                     "imagen":""
                     
                 },
@@ -181,7 +181,7 @@
                     "id":"LIMONADA-HIERBA-LUISA",
                     "nombre":"LIMONADA HIERBA LUISA",
                     "cantidad":"",
-                    "precio":11.90,
+                    "precio":11,
                     "imagen":""
                     
                 }

@@ -4,12 +4,13 @@ import { useForm } from 'react-hook-form';
 import { Globales } from '../context/context';
 import CreditCard from './CreditCard';
 
-const FormCard = () => {
+const FormCard = ({total}) => {
   const [nombreCard, setNombreCard] = useState('');
   const [numeroCard, setNumeroCard] = useState('################');
   const [fechaCard, setFechaCard] = useState('MMYY');
   const [options, setOptions] = useState('');
   const [contra, setContra] = useState('');
+  const [errorMsg, setErrorMsg] = useState('');
 
   const {setEfectivo} = useContext(Globales);
   
@@ -23,10 +24,16 @@ const FormCard = () => {
     setOptions(e.target.value);
   } 
   const handleButton = () => {
-    if (contra.length > 0) {
+    if (contra.length > 0 && (parseFloat(contra) > parseFloat(total))) {
       setEfectivo(contra);
       router.push("entrega");
+      return;
     }
+    setErrorMsg('El monto de efectivo debe ser mayor al total');
+    setTimeout(() => {
+      setErrorMsg('');
+    }, 3000);
+
   }
 
   return (
@@ -82,7 +89,7 @@ const FormCard = () => {
             {errors.expira && <p className='text-error'>{errors.expira.message}</p>}
           </div>
           <div className='group_section_form_datos'>
-            <label htmlFor="number_card">CVV</label>
+            <label htmlFor="number_card">Número CVV</label>
             <input type="text" maxLength={3} {...register("cvv", {
               required: 'Campo requerido'
             })} 
@@ -113,7 +120,13 @@ const FormCard = () => {
           <input type="button" onClick={handleButton}
            value="continuar" className='button-2' />
         </div>
-
+        {
+          errorMsg.length > 0 && (
+            <div className='row'>
+              <div className='text-alert'>{ errorMsg }</div>
+            </div>
+          )
+        }
       </div>
     </>
   )
