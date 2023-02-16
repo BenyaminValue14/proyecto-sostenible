@@ -6,6 +6,7 @@ import menu from '../db/menu.json';
 import {useForm} from 'react-hook-form';
 import { useRouter } from 'next/router'
 import Context, { Globales } from '../context/context';
+import IconPlato from '../svg/IconPlato';
 
 function Carta({showModal, setShowModal}) {
   //const [show, setShow] = useState(false);
@@ -75,7 +76,9 @@ function Carta({showModal, setShowModal}) {
                         <div className="media p-0 m-0 alert alert-dismissible items-list-2 border-0 row">   
                             <a className='carta-image col-3'>
                             {
-                                el.imagen && <Image alt='' src={el.imagen} fill={true} />
+                                el.imagen 
+                                ? (<Image alt='' src={el.imagen} fill={true} />)
+                                :  ( <IconPlato/> )
                             }
                             </a>
                             <div className='media-body col-6 px-2'>
@@ -111,7 +114,9 @@ function Carta({showModal, setShowModal}) {
                           <div className="row media p-0 m-0 alert alert-dismissible items-list-2 border-0">
                               <a className='carta-image col-3'>
                               {
-                                  el.imagen && <Image alt='' src={el.imagen} fill={true} />
+                                el.imagen 
+                                ? (<Image alt='' src={el.imagen} fill={true} />)
+                                :  ( <IconPlato/> )
                               }
                               </a>
                               <div className='media-body col-6 px-2'>
@@ -152,7 +157,9 @@ function Carta({showModal, setShowModal}) {
                                             <div className="row media p-0 mb-4 alert alert-dismissible items-list-2 border-0">
                                             <a className='carta-image col-3'>
                                             {
-                                                item.imagen && <Image alt='' src={item.imagen} fill={true} />
+                                                item.imagen 
+                                                ? ( <Image alt='' src={item.imagen} fill={true} /> )
+                                                : ( <Image alt='' src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg" fill={true} /> )
                                             }
                                             </a>
                                             <div className='media-body col-6 px-2'>

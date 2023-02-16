@@ -44,11 +44,11 @@ const Products = () => {
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a> como te va</a></h4>
+                <h4 className='product-title'> <a>Salteado de acelgas y tofu</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>$100.00 -</span>
-                    <span className="product-price-old">$120.00 </span>
+                    <span>S/. 20.90 -</span>
+                    <span className="product-price-old"> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -61,11 +61,11 @@ const Products = () => {
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a> como te va</a></h4>
+                <h4 className='product-title'> <a>Gyosas de Vegetales con proteína de Soya</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>$100.00 -</span>
-                    <span className="product-price-old">$120.00 </span>
+                    <span>S/. 24.90 -</span>
+                    <span className="product-price-old"> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -77,11 +77,11 @@ const Products = () => {
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a> como te va</a></h4>
+                <h4 className='product-title'> <a>Tofu agridulce con verduras</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>$100.00 -</span>
-                    <span className="product-price-old">$120.00 </span>
+                    <span>S/. 20.90 -</span>
+                    <span className="product-price-old"> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -94,11 +94,11 @@ const Products = () => {
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a> como te va</a></h4>
+                <h4 className='product-title'> <a>Chaufa vegano</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>$100.00 -</span>
-                    <span className="product-price-old">$120.00 </span>
+                <span>S/. 20.90 -</span>
+                    <span className="product-price-old"> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -110,11 +110,11 @@ const Products = () => {
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a> como te va</a></h4>
+                <h4 className='product-title'> <a>Sopa wantan rellenas de tempeh de garbanzos</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>$100.00 -</span>
-                    <span className="product-price-old">$120.00 </span>
+                <span>S/. 26.90 -</span>
+                <span className="product-price-old"> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>

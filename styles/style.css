@@ -5717,3 +5717,51 @@ transition: 300ms;
     }
 }
 
+/*radio buttons*/
+.radio {
+    display: flex;
+    align-items: center;
+}
+.radio input {
+    display: inline;
+    width: 20px;
+    margin-right: 6px;
+}
+.radio label::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.25s;
+}
+.radio label {
+    position: relative;
+}
+.radio:checked ~ label {
+    background-color: var(--brown);
+}
+.radio:checked ~ label::before {
+    background-color: var(--brown);
+}
+.title_1.title {
+    font-weight: 600;
+    color: var(--brown);
+}
+.contraentrega-option {
+    margin-top: 1rem;
+}
+.group_section_form_datos input.input-contraentrega {
+    max-width: 150px;
+}
+.group_section_form_datos .button-2 {
+    background-color: var(--brown);
+    color: white;
+}
+.group_section_form_datos .button-2:hover {
+    background-color: var(--brown-2);
+}

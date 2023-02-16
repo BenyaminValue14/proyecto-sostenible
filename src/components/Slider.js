@@ -23,12 +23,12 @@ const Slider = () => {
             height={470}
             />*/}
             <img 
-            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676043107/chifa/breadcrumb_jtw5du.jpg'
+            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676517010/chifa/banner-chinese-3_vxrile.png'
              alt=''                 
              />
             <div className='text-slider'>
-                <p>Holaaa</p>
-                <h1>como te va</h1>
+                <p>Sabores auténticos de la comida china</p>
+                <h1>En versión Vegana</h1>
             </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -38,12 +38,12 @@ const Slider = () => {
             height={470}
             />*/}
             <img 
-            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676043107/chifa/breadcrumb_jtw5du.jpg'
+            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676517010/chifa/banner-chinese-3_vxrile.png'
              alt=''                 
              />
             <div className='text-slider'>
-                <p>Holaaa</p>
-                <h1>como te va</h1>
+                <p>Prueba nuestros platillos</p>
+                <h1>Sin salir de la ciudad</h1>
             </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -53,12 +53,12 @@ const Slider = () => {
             height={470}
             />*/}
             <img 
-            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676043107/chifa/breadcrumb_jtw5du.jpg'
+            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676517010/chifa/banner-chinese-3_vxrile.png'
              alt=''                 
              />
             <div className='text-slider'>
-                <p>Holaaa</p>
-                <h1>como te va</h1>
+                <p>Opciones saludables y deliciosas</p>
+                <h1>Para disfrutar con amigos y familiares</h1>
             </div>
         </SwiperSlide>
       </Swiper>

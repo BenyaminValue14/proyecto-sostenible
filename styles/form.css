@@ -361,9 +361,7 @@ html body .ui-state-active, .ui-widget-content .ui-state-active{
 
 }
 @media screen and (min-width: 64em){
-    .form_page{
-        max-height: calc( 100vh - 80px);
-    }
+
     .form_page > .container{
         display: flex;
         max-width: 100%;
@@ -446,6 +444,11 @@ html body .ui-state-active, .ui-widget-content .ui-state-active{
 @media screen and (min-width: 82.5em){
     .container_image .container__direction{
         padding-bottom: 2rem;
+    }
+    .container_image .title {
+        color: var(--brown);
+        font-size: 1.25rem;
+        font-weight: 600;
     }
     .content_dateofbirth .content_icon_calendar{
         right: 24px;

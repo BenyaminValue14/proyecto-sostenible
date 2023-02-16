@@ -128,7 +128,7 @@
                     "id":"MIX-VEGAN",
                     "nombre":"MIX VEGAN",
                     "cantidad":"",
-                    "precio":15.00,
+                    "precio":15.50,
                     "imagen":""
                     
                 },
@@ -136,7 +136,7 @@
                     "id":"FRUTOS-ROJOS",
                     "nombre":"FRUTOS ROJOS",
                     "cantidad":"",
-                    "precio":15.00,
+                    "precio":15.50,
                     "imagen":""
                     
                 },
@@ -144,7 +144,7 @@
                     "id":"TROPICAL",
                     "nombre":"TROPICAL",
                     "cantidad":"",
-                    "precio":15.00,
+                    "precio":15.50,
                     "imagen":""
                     
                 }
@@ -157,7 +157,7 @@
                     "id":"NARANJADA",
                     "nombre":"NARANJADA",
                     "cantidad":"",
-                    "precio":9.00,
+                    "precio":9.90,
                     "imagen":""
                     
                 },
@@ -165,7 +165,7 @@
                     "id":"LIMONADA",
                     "nombre":"LIMONADA",
                     "cantidad":"",
-                    "precio":9.00,
+                    "precio":9.90,
                     "imagen":""
                     
                 },
@@ -173,7 +173,7 @@
                     "id":"MARACUYA",
                     "nombre":"MARACUYÁ",
                     "cantidad":"",
-                    "precio":9.00,
+                    "precio":9.90,
                     "imagen":""
                     
                 },
@@ -181,7 +181,7 @@
                     "id":"LIMONADA-HIERBA-LUISA",
                     "nombre":"LIMONADA HIERBA LUISA",
                     "cantidad":"",
-                    "precio":11.00,
+                    "precio":11.90,
                     "imagen":""
                     
                 }

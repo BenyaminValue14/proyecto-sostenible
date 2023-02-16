@@ -77,14 +77,16 @@ const Layout = ({children}) => {
                             <p>Nuestros correos y números</p>
                             <div className="footer-contact mt-20">
                                 <ul>
-                                    <li>0123456789</li>
-                                    <li>0123456789</li>
+                                    <li>933 779 148</li>
+                                    <li>904 544 706</li>
+                                    <li>956 159 639</li>
                                 </ul>
                             </div>
                             <div className="footer-contact mt-20">
                                 <ul>
-                                    <li>demo@example.com</li>
-                                    <li>demo@example.com</li>
+                                    <li>dayana.ramos@gmail.com</li>
+                                    <li>luis.carhuamaca@gmail.com</li>
+                                    <li>milagros.leiva@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
