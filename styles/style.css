@@ -5765,3 +5765,8 @@ transition: 300ms;
 .group_section_form_datos .button-2:hover {
     background-color: var(--brown-2);
 }
+.entrega .container .title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--brown);
+  }

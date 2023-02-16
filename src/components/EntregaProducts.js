@@ -77,12 +77,13 @@ const EntregaProducts = () => {
   return (
     <div>
       <div className='row'>
+        <p className='title'>Detalle de Pedido</p>
         {
           isContent === true
           ?
           (
             <>
-            <div className='col-3 col-lg-2'>
+            <div className='col-4 col-lg-2'>
               <p>Categoría</p>
             </div>
             <div className='col-5 col-lg-5'>
@@ -104,11 +105,11 @@ const EntregaProducts = () => {
         entradas.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-3 col-lg-2 relative'>
+            <div className='col-4 col-lg-2 relative'>
               <Image 
               src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'} 
               alt=''
-              width={120}
+              width={80}
               height={80}
               />
             </div>
@@ -129,11 +130,11 @@ const EntregaProducts = () => {
         platos.map((el, idx) => {
           return (
             <div key={el.id} className="row  pb-3">
-            <div className='col-3 col-lg-2 relative'>
+            <div className='col-4 col-lg-2 relative'>
             <Image 
               src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'} 
               alt=''
-              width={120}
+              width={80}
               height={80}
               />
             </div>
@@ -154,11 +155,11 @@ const EntregaProducts = () => {
         bebidas.map((el, idx) => {
           return (
             <div key={el.id} className="row pb-3">
-            <div className='col-3 col-lg-2 relative'>
+            <div className='col-4 col-lg-2 relative'>
             <Image 
-              src={el.imagen} 
+              src={el.imagen ? el.imagen : 'https://res.cloudinary.com/dxefwzl0v/image/upload/v1676430186/chifa/chinese-food-chopsticks-svgrepo-com_ec8xoa.svg'} 
               alt=''
-              width={120}
+              width={80}
               height={80}
               />
             </div>
@@ -173,8 +174,8 @@ const EntregaProducts = () => {
         })
       }
       <div className="row pb-3 w-100">
-      <div className='col-3 col-sm-2 relative'></div>
-      <div className='col-6 col-sm-5 bold'><strong>Total:</strong></div>
+      <div className='col-4 col-sm-2 relative'></div>
+      <div className='col-5 col-sm-5 bold'><strong>Total:</strong></div>
       <div className='col-3 col-sm-2 bold'><strong>S/{total}</strong></div>
       </div>
     </div>

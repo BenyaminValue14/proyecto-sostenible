@@ -9,7 +9,7 @@ const entrega = () => {
       <Layout>
         <div className='entrega gray-bg'>
           <div className='container'>
-            <p className='title'>¡Gracias por tu compra!</p>
+            <p className='title text-center'>¡Gracias por tu compra!</p>
             <div className='row'>
               <div className='col-12 col-lg-5'>
                 <EntregaUser/>
