@@ -5,7 +5,7 @@
             "nombre": "Wantan rellenos de carne de soya",
             "cantidad": 5,
             "precio": 19.90,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676612369/chifa/Wantan_rellenos_de_carne_de_soya-light_h1wix2.png"
         },
         {
             "id":"Gyosas-de-Vegetales-con-proteína-de-Soya",
@@ -23,14 +23,14 @@
         },
         {
             "id":"Sopa-wantan-rellenas-de-EDAMAME-Y-MENTA",
-            "nombre":"Sopa wantan rellenas de EDAMAME Y MENTA",
+            "nombre":"Sopa wantan rellenas de edamame y menta",
             "camtidad":"",
             "precio":28.90,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083665/chifa/products/edamame-vegan-wonton-soup-image-2_ucyggb.jpg"
         },
         {
             "id":"ROLLITOS-CON-MANGO-Y-PALTA",
-            "nombre":"ROLLITOS CON MANGO Y PALTA",
+            "nombre":"Rollitos con mango y palta",
             "cantidad":5,
             "precio":32.90,
             "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083630/chifa/products/rollitos-primavera-con-mango-y-palta-1_qwcpia.jpg"
@@ -38,10 +38,10 @@
         },
         {
             "id":"KEBABS-DE-BERENJENAS-CON-GLASEADO-DE-TAMARINDO",
-            "nombre":"KEBABS DE BERENJENAS CON GLASEADO DE TAMARINDO",
+            "nombre":"Kebabs de berenjenas con glaseado de tamarindo",
             "cantidad":6,
             "precio":34.90,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676612369/chifa/KEBABS_DE_BERENJENAS_CON_GLASEADO_DE_TAMARINDO-light_j31bgh.jpg"
             
         }
     ],
@@ -67,7 +67,7 @@
             "nombre":"Salteado de Tofu con Brotes de Soja",
             "cantidad":"",
             "precio":44,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676612648/chifa/Salteado_de_Tofu_con_Brotes_de_Soja-light_nsdgls.jpg"
             
         },
 
@@ -76,7 +76,7 @@
             "nombre":"Aeropuerto de quinua multicolor",
             "cantidad":"",
             "precio":48,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676612649/chifa/Aeropuerto_de_quinua_multicolor-light_azgdjl.jpg"
             
         },
         {
@@ -84,7 +84,7 @@
             "nombre":"Salteado de acelgas y tofu",
             "cantidad":"",
             "precio":46,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676612648/chifa/Salteado_de_acelgas_y_tofu-light_vfcmo4.jpg"
             
         },
         {
@@ -92,7 +92,7 @@
             "nombre":"Chaufa de Tofu picante con guisantes",
             "cantidad":"",
             "precio":50,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676613073/chifa/Chaufa_de_Tofu_picante_con_guisantes-light_l3dcoa.jpg"
             
         },
         {
@@ -100,23 +100,23 @@
             "nombre":"Chaufa de Brócoli y Tofu en Salsa de Ajo",
             "cantidad":"",
             "precio":44,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676613074/chifa/Chaufa_de_Br%C3%B3coli_y_Tofu_en_Salsa_de_Ajo-light_an6gqa.jpg"
             
         },
         {
             "id":"TOFU-EN-TROZOS-CON-TAUSÍ-Y-VERDURAS",
-            "nombre":"TOFU EN TROZOS CON TAUSÍ Y VERDURAS",
+            "nombre":"Tofu agridulce con verduras",
             "cantidad":"",
             "precio":50,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676613073/chifa/TOFU_EN_TROZOS_CON_TAUS%C3%8D_Y_VERDURAS-light_afos1v.jpg"
             
         },
         {
             "id":"TIPAKAY-DE-TOFU",
-            "nombre":"TIPAKAY DE TOFU",
+            "nombre":"Tipakay de tofu",
             "cantidad":"",
             "precio":46,
-            "imagen":""
+            "imagen":"https://res.cloudinary.com/dxefwzl0v/image/upload/v1676613073/chifa/Tipakay_de_tofu-light_vphuyk.jpg"
             
         }
     ],
@@ -126,24 +126,24 @@
             "contenido":[
                 {
                     "id":"MIX-VEGAN",
-                    "nombre":"MIX VEGAN",
-                    "cantidad":"",
+                    "nombre":"Mix vegan",
+                    "cantidad":"Maracuyá, piña, sirope y agua gasificada",
                     "precio":15,
                     "imagen":""
                     
                 },
                 {
                     "id":"FRUTOS-ROJOS",
-                    "nombre":"FRUTOS ROJOS",
-                    "cantidad":"",
+                    "nombre":"Frutos rojos",
+                    "cantidad":"Sirope de té rojo, mix de frutos rojos y agua gasificada",
                     "precio":15,
                     "imagen":""
                     
                 },
                 {
                     "id":"TROPICAL",
-                    "nombre":"TROPICAL",
-                    "cantidad":"",
+                    "nombre":"Tropical",
+                    "cantidad":"Piña, hierba luisa y jarabe de kión",
                     "precio":15,
                     "imagen":""
                     
@@ -155,7 +155,7 @@
             "contenido":[
                 {
                     "id":"NARANJADA",
-                    "nombre":"NARANJADA",
+                    "nombre":"Naranjada",
                     "cantidad":"",
                     "precio":9,
                     "imagen":""
@@ -163,7 +163,7 @@
                 },
                 {
                     "id":"LIMONADA",
-                    "nombre":"LIMONADA",
+                    "nombre":"Limonada",
                     "cantidad":"",
                     "precio":9,
                     "imagen":""
@@ -171,7 +171,7 @@
                 },
                 {
                     "id":"MARACUYA",
-                    "nombre":"MARACUYÁ",
+                    "nombre":"Maracuyá",
                     "cantidad":"",
                     "precio":9,
                     "imagen":""
@@ -179,7 +179,7 @@
                 },
                 {
                     "id":"LIMONADA-HIERBA-LUISA",
-                    "nombre":"LIMONADA HIERBA LUISA",
+                    "nombre":"Limonada de hierba luisa",
                     "cantidad":"",
                     "precio":11,
                     "imagen":""

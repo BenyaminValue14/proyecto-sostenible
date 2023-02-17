@@ -47,8 +47,7 @@ const Products = () => {
                 <h4 className='product-title'> <a>Salteado de acelgas y tofu</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>S/. 20.90 -</span>
-                    <span className="product-price-old"> S/. 30.00 </span>
+                    <span className=""> S/. 46.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -64,8 +63,8 @@ const Products = () => {
                 <h4 className='product-title'> <a>Gyosas de Vegetales con proteína de Soya</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>S/. 24.90 -</span>
-                    <span className="product-price-old"> S/. 30.00 </span>
+                    <span>S/. 30.00 -</span>
+                    <span className="product-price-old"> S/. 37.50 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -80,8 +79,7 @@ const Products = () => {
                 <h4 className='product-title'> <a>Tofu agridulce con verduras</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                    <span>S/. 20.90 -</span>
-                    <span className="product-price-old"> S/. 30.00 </span>
+                    <span className=""> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -97,8 +95,8 @@ const Products = () => {
                 <h4 className='product-title'> <a>Chaufa vegano</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                <span>S/. 20.90 -</span>
-                    <span className="product-price-old"> S/. 30.00 </span>
+                <span>S/. 40.00 -</span>
+                    <span className="product-price-old"> S/. 48.00 </span>
                 </div>
             </div>
         </SwiperSlide>
@@ -113,8 +111,7 @@ const Products = () => {
                 <h4 className='product-title'> <a>Sopa wantan rellenas de tempeh de garbanzos</a></h4>
                 </div>
                 <div className="product-price-wrapper">
-                <span>S/. 26.90 -</span>
-                <span className="product-price-old"> S/. 30.00 </span>
+                <span className=""> S/. 30.00 </span>
                 </div>
             </div>
         </SwiperSlide>

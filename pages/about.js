@@ -32,12 +32,12 @@ const about = () => {
               </div>
               <div className="col-lg-6 col-md-12">
                 <div className="overview-img text-center">
-                  <a href="#">
+                  <a>
                     <Image
-                      src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676347946/chifa/LOGO_ohcklm.png"
-                      alt=""
-                      width={570}
-                      height={400}
+                      src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676614968/chifa/LOGUITO-light_lxpxpu.png"
+                      alt="Logo Chifa Vegan"
+                      width={590}
+                      height={470}
                     />
                   </a>
                 </div>
