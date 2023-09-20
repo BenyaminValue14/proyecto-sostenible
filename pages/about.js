@@ -2,29 +2,47 @@ import React from 'react'
 import Layout from '../src/components/Layout'
 import Image from 'next/image'
 import Frases from '../src/components/Frases'
+import IconLogo from '../src/svg/IconLogo'
 const about = () => {
   return (
     <>
       <Layout>
-        <div className="breadcrumb-area bg-image-3 ptb-150">
-          <div className="container">
+      <div className='banner'>
+        <Image 
+            src='https://www.elperuano.pe/fotografia/thumbnail/2019/01/08/000053615M.jpg' 
+            alt='banner educacion rural'
+            width="760"
+            height="400"
+        />
+        <div className="breadcrumb-area  bg-image-4 ptb-150">
+          <div className="container banner">
             <div className="breadcrumb-content text-center">
               <h3>Quienes Somos</h3>
             </div>
           </div>
         </div>
+      </div>
         <div className="about-us-area pt-100 pb-100 gray-bg ">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 col-md-12 d-flex align-items-center">
                 <div className="overview-content-2">
-                  <h4>Bienvedios a</h4>
-                  <h2>Chifa Vegan!</h2>
-                  <p className="peragraph-blog">Somos un restaurante que brinda un excelente servicio de alimentación a base de plantas, ofreciendo una variedad de platos orientales y bebidas para degustar.  Nos identificamos por mantener el respeto y ética hacia los animales, siendo reconocidos por nuestra buena sazón. Comunícate con nosotros a través de nuestras redes sociales o página web.</p>
+                  <h4>Les presentamos</h4>
+                  <h2>Agro Educa!</h2>
+                  <p className="peragraph-blog">
+                    Somos un grupo de jóvenes estudiantes presentando una solución para la educacióm rural
+                    con el fin de que los niños y las niñas estudiantes puedan tener acceso a mejores conocimientos académicos
+                    a través de la plataforma que ofrecemos a los docentes.
+                  </p>
                   <h4>Visión</h4>
-                  <p className="peragraph-blog">Ser reconocidos en el Perú por nuestra variedad de platos occidentales, una rápida entrega de nuestro producto y destacar por nuestra excelente atención.</p>
+                  <p className="peragraph-blog">
+                  Disminuir la brecha digital y educativa en las zonas rurales a un 5% impactando a las 2 provincias del Perú
+                  </p>
                   <h4>Misión</h4>
-                  <p className="peragraph-blog">Somos el primer chifa vegano especializado en una alimentación a base de plantas, promoviendo conciencia en el respeto hacia los animales, cumpliendo las expectativas de nuestros consumidores.</p>
+                  <p className="peragraph-blog">
+                  Mejorar la educación rural en la provincia de Ancash en zonas rurales, brindando nuestra herramienta digital
+                  a los docentes y capacitarlos para su uso.
+                  </p>
                   <div className="overview-btn mt-40">
                     <Image width={127} height={49} src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676043183/chifa/signature_xgtn9l.png" alt="Candidate Signature" />
                   </div>
@@ -32,14 +50,11 @@ const about = () => {
               </div>
               <div className="col-lg-6 col-md-12">
                 <div className="overview-img text-center">
-                  <a>
-                    <Image
-                      src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676614968/chifa/LOGUITO-light_lxpxpu.png"
-                      alt="Logo Chifa Vegan"
-                      width={590}
-                      height={470}
-                    />
-                  </a>
+                  <div className='container-image'>
+                    <a>
+                      <IconLogo />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -54,50 +69,66 @@ const about = () => {
               </div>
             </div>
             <div className='row'>
-              <div className='col-lg-4 col-md-6 col-sm-6'>
+              <div className='col-lg-3 col-md-6 col-sm-6'>
                 <div className='team-wrapper mb-30'>
                   <div className='team-img'>
                     <Image 
-                      src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676347524/chifa/miembros/luisito_lrqjlm.jpg"
+                      src="https://dummyimage.com/300x400/cccccc/fff"
                       alt=''
                       width={370}
                       height={452}
                     />
                   </div>
                   <div className='team-content text-center'>
-                    <h4>Luis Carhuamaca</h4>
+                    <h4>Newton</h4>
                     <span>Integrante</span>
                   </div>  
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6 col-sm-6'>
+              <div className='col-lg-3 col-md-6 col-sm-6'>
                 <div className='team-wrapper mb-30'>
                   <div className='team-img'>
                     <Image 
-                      src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676347524/chifa/miembros/dayana_az7ibj.jpg"
+                      src="https://dummyimage.com/300x400/cccccc/fff"
                       alt=''
                       width={370}
                       height={452}
                     />
                   </div>
                   <div className='team-content text-center'>
-                    <h4>Dayana Ramos</h4>
+                    <h4>Alejadandra</h4>
                     <span>Integrante</span>
                   </div>  
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6 col-sm-6'>
+              <div className='col-lg-3 col-md-6 col-sm-6'>
                 <div className='team-wrapper mb-30'>
                   <div className='team-img'>
                     <Image 
-                      src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676347524/chifa/miembros/milagros_lwqhqi.jpg"
+                      src="https://dummyimage.com/300x400/cccccc/fff"
                       alt=''
                       width={370}
                       height={452}
                     />
                   </div>
                   <div className='team-content text-center'>
-                    <h4>Milagros Leiva</h4>
+                    <h4>Benjamín</h4>
+                    <span>Integrante</span>
+                  </div>  
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6 col-sm-6'>
+                <div className='team-wrapper mb-30'>
+                  <div className='team-img'>
+                    <Image 
+                      src="https://dummyimage.com/300x400/cccccc/fff"
+                      alt=''
+                      width={370}
+                      height={452}
+                    />
+                  </div>
+                  <div className='team-content text-center'>
+                    <h4>Cameron</h4>
                     <span>Integrante</span>
                   </div>  
                 </div>

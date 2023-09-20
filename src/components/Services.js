@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 //import 'swiper/css/scrollbar';
 import Image from 'next/image';
 
-const Products = () => {
+const Services = () => {
   return (
     <>
       <Swiper pagination={false} slidesPerView={4}  modules={[Pagination]} className="mySwiper"
@@ -38,48 +38,38 @@ const Products = () => {
       >
         <SwiperSlide>
             <div className='slider-image'>
-                <Image src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083649/chifa/products/263cfd67205e1228ff063b8c1fbbd934_kbaznj.jpg' alt=''
+                <Image src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1695241550/education_project/image-1_z7pxtb.jpg' alt=''
                 fill={true}
                 />
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a>Salteado de acelgas y tofu</a></h4>
-                </div>
-                <div className="product-price-wrapper">
-                    <span className=""> S/. 46.00 </span>
+                <h4 className='product-title'> <a>Plataforma de innovación enfocada en capacitación docente</a></h4>
                 </div>
             </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className='slider-image'>
-                <Image src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083657/chifa/products/Dumpling-1536x1024_ipxkfb.jpg' alt=''
+                <Image src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1695241550/education_project/image-3_jwcuuv.jpg' alt=''
                 fill={true}
                 />
                 <span>-20%</span>
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a>Gyosas de Vegetales con proteína de Soya</a></h4>
-                </div>
-                <div className="product-price-wrapper">
-                    <span>S/. 30.00 -</span>
-                    <span className="product-price-old"> S/. 37.50 </span>
+                <h4 className='product-title'> <a>Material digital educativo</a></h4>
                 </div>
             </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className='slider-image'>
-                <Image src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676083630/chifa/products/Sweet-Sour-Tofu_go9wsq.jpg' alt=''
+                <Image src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1695241550/education_project/image-2_pfli2k.jpg' alt=''
                 fill={true}
                 />
             </div>
             <div className='product-content text-left'>
                 <div className='cart-hovera'>
-                <h4 className='product-title'> <a>Tofu agridulce con verduras</a></h4>
-                </div>
-                <div className="product-price-wrapper">
-                    <span className=""> S/. 30.00 </span>
+                <h4 className='product-title'> <a>Análisis del rendimiento de los alumnos en sedes rurales</a></h4>
                 </div>
             </div>
         </SwiperSlide>
@@ -88,4 +78,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Services

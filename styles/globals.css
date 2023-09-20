@@ -49,10 +49,41 @@ main {
 .text-slider span {
   color: #fff;
 }
+.slider-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.slider-principal * {
+  color: white;
+  font-weight: 500;
+  font-family: "Montserrat",sans-serif;
+}
+.slider-text {
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+}
+@keyframes heading{
+  0% {top: 50px;opacity:0.5}
+  100% {top: 0px;opacity:1}
+}
+.swiper-slide-active .slider-text {
+  position: relative;
+  animation-name: heading;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: var(--brown);
+}
 .slider-image {
   position: relative;
-  width: 260px;
-  height: 284px;
+  width: 360px;
+  height: 400px;
+}
+.slider-image img{
+  width: 100%;
+  aspect-ratio: 4/3;
 }
 .product-area-content {
   width: 90%;

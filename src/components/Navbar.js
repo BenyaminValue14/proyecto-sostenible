@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MediaQuery, { useMediaQuery } from 'react-responsive'
 import {MdMenuBook} from 'react-icons/md'
+import IconLogo from '../svg/IconLogo';
+import {ReactSVG} from "react-svg";
 
 const Navbar = ({handleShow}) => {
     const [meanclose, setMeanclose] = useState(false);
@@ -21,10 +23,7 @@ const Navbar = ({handleShow}) => {
                     <div className="logo">
                         <Link href="/">
                             {/*<Image alt="" src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039036/chifa/logo_mvuekn.png" width='152' height='38' /> */}
-                            <Image alt=''
-                            src='https://res.cloudinary.com/dxefwzl0v/image/upload/v1676265990/chifa/logo-2-light_wre4hs.png' 
-                            fill={true}
-                            />
+                            <IconLogo />
                         </Link>
                     </div>
                 </div>
@@ -41,18 +40,18 @@ const Navbar = ({handleShow}) => {
                                 </ul>
                             </nav>
                         </div>
-                        <div className="header-currency">
-                            <button className='btn_view_card' onClick={handleShow}>
+                        {/*<div className="header-currency">
+                            <button className='btn_view_card'>
                                  <MdMenuBook/> <span>Ver carta</span>
                             </button>
 
-                        </div>
+                        </div>*/}
                         <div className="header-cart">
-                            <a href="#">
+                            {/*<a href="#">
                                 <div className="cart-icon">
                                     <Image width='24' height='24' alt='' src="https://res.cloudinary.com/dxefwzl0v/image/upload/v1676039449/chifa/shopping-cart_inb3fm.png"/>
                                 </div>
-                            </a>
+                            </a>*/}
                             {/*
                             <div className="shopping-cart-content">
                                 <ul>

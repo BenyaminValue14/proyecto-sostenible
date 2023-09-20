@@ -17,7 +17,7 @@ const Frases = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-12 col-md-12 col-12'>
-              <Swiper pagination={false} modules={[Pagination]} className="mySwiper"
+              <Swiper pagination={false} modules={[Navigation]} navigation={true} className="mySwiper"
                 loop={true}
               >
                 <SwiperSlide>
@@ -30,13 +30,13 @@ const Frases = () => {
                       />
                     </div>
                     <p>
-                      La juventud es corta. Cuida de ti alimentándote de forma sana, para que disfrutes hasta en la vejez, que es larga.
+                      Aportamos valor a la educación con base en nuestra investigación exhaustiva.
                     </p>
                     <h4>
-                      Anonimo
+                      AGROEDUCA
                     </h4>
                     <h3>
-                      Marketer
+                      Equipo
                     </h3>
                   </div>
                 </SwiperSlide>
@@ -50,13 +50,13 @@ const Frases = () => {
                       />
                     </div>
                     <p>
-                      La juventud es corta. Cuida de ti alimentándote de forma sana, para que disfrutes hasta en la vejez, que es larga.
+                      Generando innovación para mejorar la calidad docente.
                     </p>
                     <h4>
-                      Anonimo
+                      AGROEDUCA
                     </h4>
                     <h3>
-                      Marketer
+                      Equipo
                     </h3>
                   </div>
                 </SwiperSlide>

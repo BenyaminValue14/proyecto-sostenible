@@ -13,6 +13,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'dummyimage.com',
         port: ''
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.elperuano.pe',
+        port: ''
       }
     ]
   }
